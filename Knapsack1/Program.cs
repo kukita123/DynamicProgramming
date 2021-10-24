@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//https://www.youtube.com/watch?v=xOlhR_2QCXY
+
 namespace Knapsack1
 {
     class Program
@@ -63,6 +65,7 @@ namespace Knapsack1
             watch.Stop();
             Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
 
+            watch.Reset();
             watch.Start();
             Console.WriteLine("Knapsack - Second Solution: Sum = {0}", KS2(N, C));
             watch.Stop();

@@ -15,13 +15,15 @@ namespace Fibonacci2
         static long Fibonacci(int n)
         {
             // Използване на предишно получена стойност
-            if (memo[n] != 0) return memo[n];
+            if (memo[n] != 0)
+                return memo[n];
 
             // Получаване на нова стойност и запазване в паметта
             if (n <= 2)
                 memo[n] = 1;
             else
                 memo[n] = Fibonacci(n - 2) + Fibonacci(n - 1);
+
             return memo[n];
         }
 
